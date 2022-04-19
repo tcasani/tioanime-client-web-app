@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta content="es" name="language" />
+    <title>Anime Online en HD - TioAnime</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="./assets/css/main.css" media="all" />
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./assets/css/css" media="all" />
+
+    <!-- Auto generated -->
+        <script src="./assets/js/sdk.js.descargar" async="" crossorigin="anonymous"></script>
+        <script src="./assets/js/analytics.js.descargar" type="text/javascript" async=""></script>
+        <script src="./assets/js/sdk.js(1).descargar" id="facebook-jssdk"></script>
+    
+    <!-- <script src="https://kit.fontawesome.com/2a41106415.js" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/2a41106415.js.descargar" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome auto generated -->
+        <link rel="stylesheet" href="./assets/css/fa-v4-font-face.css" id="fa-v4-font-face" />
+        <link rel="stylesheet" href="./assets/css/fa-v4-shims.css" id="fa-v4-shims" />
+        <link rel="stylesheet" href="./assets/css/fa-main.css" id="fa-main" />
+        <!-- <style media="all" id="fa-v4-font-face"></style> -->
+        <!-- <style media="all" id="fa-v4-shims"></style> -->
+        <!-- <style media="all" id="fa-main"></style> -->
+
+
+    <link rel="icon" href="./assets/img/icon-32x32.png" sizes="32x32">
+    <meta name="theme-color" content="#263DFF">
+    <meta property="fb:app_id" content="251631505774377">
+    <meta name="robots" content="all, index, follow">
+    <meta name="description"
+        content="El mejor portal para ver anime online sub español en calidad HD, descargar anime ligero en HD desde Mega, Mediafire y más! TioAnime tu mejor opción.">
+    <meta property="og:site_name" content="TioAnime">
+    <meta property="og:url" content="https://tioanime.com">
+    <meta property="og:type" content="video.episode">
+    <meta property="og:image" content="./assets/img/tio_fb.jpg">
+    <meta property="og:description"
+        content="ver online tus animes favoritos en calidad HD subtitulados al español en TioAnime - animes con sub español">
+    <link href="https://tioanime.com/" rel="canonical">
+
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- CSS FB Auto generated -->
+        <link rel="stylesheet" href="./assets/css/fb.css" />
+        <!-- <style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe"></style> -->
+</head>
+
+<body class="dark">
+
+    <!-- Inicio configuración FB -->
+    <!-- <div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div> -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2&appId=251631505774377';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Fin configuración FB -->
+
+    <!-- App UI TioAnime -->
+    <div id="tioanime">
+
+        <header>
+            <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="./">
+                        <figure class="logo"><img src="./assets/img/logo-dark.png" alt="logo"></figure>
+                    </a>
+
+                    <!-- Botón menú (Solo vista móvil) -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                        aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar -->
+                    <div class="collapse navbar-collapse" id="menu">
+
+                        <!-- Botones de login y registro -->
+                        <div class="user-box order-3 ml-lg-4 mt-3 mb-3">
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-primary btn-login btn-block" type="button"
+                                        data-toggle="modal" data-target="#modal-login"><i class="fa-user mr-0"></i><span
+                                            class="d-lg-none ml-2">Entrar</span></button>
+                                </div>
+                                <div class="col d-lg-none">
+                                    <button class="btn btn-primary btn-signup btn-block" type="button"
+                                        data-toggle="modal" data-target="#modal-signup"><i
+                                            class="fa-user-lock mr-0"></i><span
+                                            class="d-lg-none ml-2">Registro</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enlaces a páginas -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="https://tioanime.com/">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://tioanime.com/directorio">Animes</a>
+                            </li>
+
+                            <li class="nav-item fa-star"><a class="nav-link"
+                                    href="https://tioanime.com/programacion">Programación Semanal</a></li>
+                        </ul>
+
+                        <!-- Widget de búsqueda -->
+                        <div class="search dropdown">
+                            <form action="https://tioanime.com/directorio" method="get" id="results" autocomplete="off"
+                                data-toggle="dropdown">
+                                <label class="form-icon fa-search">
+                                    <input class="form-control" name="q" id="search-anime" type="search"
+                                        placeholder="Buscar..." aria-label="Buscar...">
+                                </label>
+                            </form>
+                            <div class="results dropdown-menu" id="search-results" aria-labelledby="results">
+                                <div class="text-center">Escribe al menos 2 caracteres</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+
+            <!-- Últimos Episodios -->
+            <section>
+                <div class="header">
+                    <h1 class="title fa-fire">Últimos Episodios</h1>
+                </div>
+                <ul class="episodes list-unstyled row">
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/one-piece-tv-1014">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/7.jpg"
+                                            alt="One Piece 1014">
+                                    </figure>
+                                </div>
+                                <h3 class="title">One Piece 1014</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/digimon-ghost-game-22">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3557.jpg"
+                                            alt="Digimon Ghost Game 22"></figure>
+                                </div>
+                                <h3 class="title">Digimon Ghost Game 22</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/rymans-club-12">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3620.jpg"
+                                            alt="Ryman&#39;s Club 12"></figure>
+                                </div>
+                                <h3 class="title">Ryman's Club 12</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/kingdom-4th-season-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3655.jpg"
+                                            alt="Kingdom 4th Season 2"></figure>
+                                </div>
+                                <h3 class="title">Kingdom 4th Season 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/kawaii-dake-ja-nai-shikimorisan-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3653.jpg"
+                                            alt="Kawaii dake ja Nai Shikimori-san 2"></figure>
+                                </div>
+                                <h3 class="title">Kawaii dake ja Nai Shikimori-san 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/build-divide-code-white-3">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3628.jpg"
+                                            alt="Build Divide: Code White 3"></figure>
+                                </div>
+                                <h3 class="title">Build Divide: Code White 3</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/kunoichi-tsubaki-no-mune-no-uchi-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3652.jpg"
+                                            alt="Kunoichi Tsubaki no Mune no Uchi 2"></figure>
+                                </div>
+                                <h3 class="title">Kunoichi Tsubaki no Mune no Uchi 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/gunjou-no-fanfare-3">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3627.jpg"
+                                            alt="Gunjou no Fanfare 3"></figure>
+                                </div>
+                                <h3 class="title">Gunjou no Fanfare 3</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/spy-x-family-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3654.jpg"
+                                            alt="Spy x Family 2">
+                                    </figure>
+                                </div>
+                                <h3 class="title">Spy x Family 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a
+                                href="https://tioanime.com/ver/love-live-nijigasaki-gakuen-school-idol-doukoukai-2nd-season-3">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3626.jpg"
+                                            alt="Love Live! Nijigasaki Gakuen School Idol Doukoukai 2nd Season 3">
+                                    </figure>
+                                </div>
+                                <h3 class="title">Love Live! Nijigasaki Gakuen School Idol Doukoukai 2nd Season 3</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/love-all-play-3">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3625.jpg"
+                                            alt="Love All Play 3"></figure>
+                                </div>
+                                <h3 class="title">Love All Play 3</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/ao-ashi-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3651.jpg" alt="Ao Ashi 2">
+                                    </figure>
+                                </div>
+                                <h3 class="title">Ao Ashi 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/yatogamechan-kansatsu-nikki-4th-season-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3650.jpg"
+                                            alt="Yatogame-chan Kansatsu Nikki 4th Season 2"></figure>
+                                </div>
+                                <h3 class="title">Yatogame-chan Kansatsu Nikki 4th Season 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/shadowverse-flame-3">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3624.jpg"
+                                            alt="Shadowverse Flame 3"></figure>
+                                </div>
+                                <h3 class="title">Shadowverse Flame 3</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/dragon-quest-dai-no-daibouken-2020-73">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3381.jpg"
+                                            alt="Dragon Quest: Dai no Daibouken (2020) 73"></figure>
+                                </div>
+                                <h3 class="title">Dragon Quest: Dai no Daibouken (2020) 73</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/shokei-shoujo-no-virgin-road-3">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3623.jpg"
+                                            alt="Shokei Shoujo no Virgin Road 3"></figure>
+                                </div>
+                                <h3 class="title">Shokei Shoujo no Virgin Road 3</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/dance-dance-danseur-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3647.jpg"
+                                            alt="Dance Dance Danseur 2"></figure>
+                                </div>
+                                <h3 class="title">Dance Dance Danseur 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/cue-14">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3601.jpg" alt="Cue! 14">
+                                    </figure>
+                                </div>
+                                <h3 class="title">Cue! 14</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/aharensan-wa-hakarenai-3">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3622.jpg"
+                                            alt="Aharen-san wa Hakarenai 3"></figure>
+                                </div>
+                                <h3 class="title">Aharen-san wa Hakarenai 3</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3">
+                        <article class="episode">
+                            <a href="https://tioanime.com/ver/jantama-pong-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/thumbs/3648.jpg"
+                                            alt="Jantama Pong☆ 2"></figure>
+                                </div>
+                                <h3 class="title">Jantama Pong☆ 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Otras secciones -->
+            <div class="row latest flex-nowrap">
+
+                <!-- Últimas Peliculas -->
+                <section class="col-4 movies">
+                    <div class="header">
+                        <h1 class="title fa-fire">Últimas Peliculas</h1>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <article class="anime media align-items-center">
+                                <div class="thumb align-self-start">
+                                    <a href="https://tioanime.com/anime/violet-evergarden-the-movie">
+                                        <figure class="fa-play-circle">
+                                            <img src="./uploads/portadas/3587.jpg" alt="Violet Evergarden the Movie">
+                                        </figure>
+                                    </a>
+                                    <span class="anime-type-peli">Pelicula</span>
+                                </div>
+                                <div class="media-body">
+                                    <a href="https://tioanime.com/anime/violet-evergarden-the-movie">
+                                        <h3 class="title">Violet Evergarden the Movie</h3>
+                                    </a>
+                                    <p class="description">
+                                        Violet Evergarden, una joven conocida anteriormente como “el arma”, ha
+                                        abandonado el campo de batalla para comenzar una...
+                                    </p>
+                                    <p class="genres">
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=drama"
+                                                class="btn btn-sm btn-light rounded-pill">Drama</a>
+                                        </span>
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=fantasia"
+                                                class="btn btn-sm btn-light rounded-pill">Fantasía</a>
+                                        </span>
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=recuentos-de-la-vida"
+                                                class="btn btn-sm btn-light rounded-pill">Recuentos de la vida</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="anime media align-items-center">
+                                <div class="thumb align-self-start">
+                                    <a
+                                        href="https://tioanime.com/anime/nanatsu-no-taizai-movie-2-hikari-ni-norowareshi-monotachi">
+                                        <figure class="fa-play-circle">
+                                            <img src="./uploads/portadas/3549.jpg"
+                                                alt="Nanatsu no Taizai Movie 2: Hikari ni Norowareshi Mono-tachi">
+                                        </figure>
+                                    </a>
+                                    <span class="anime-type-peli">Pelicula</span>
+                                </div>
+                                <div class="media-body">
+                                    <a
+                                        href="https://tioanime.com/anime/nanatsu-no-taizai-movie-2-hikari-ni-norowareshi-monotachi">
+                                        <h3 class="title">Nanatsu no Taizai Movie 2: Hikari ni Norowareshi Mono-tachi
+                                        </h3>
+                                    </a>
+                                    <p class="description">
+                                        Nuestro equipo esta ocupado, no tenemos un resumen de este elemento aun.
+                                    </p>
+                                    <p class="genres">
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=accion"
+                                                class="btn btn-sm btn-light rounded-pill">Acción</a>
+                                        </span>
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=aventura"
+                                                class="btn btn-sm btn-light rounded-pill">Aventuras</a>
+                                        </span>
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=fantasia"
+                                                class="btn btn-sm btn-light rounded-pill">Fantasía</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <a href="https://tioanime.com/directorio?type%5B%5D=1" class="btn btn-block btn-light rounded">Más
+                        Películas</a>
+                </section>
+
+                <!-- Últimos Ovas -->
+                <section class="col-4 ovas">
+                    <div class="header">
+                        <h1 class="title fa-fire">Últimos Ovas</h1>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <article class="anime media align-items-center">
+                                <div class="thumb align-self-start">
+                                    <a
+                                        href="https://tioanime.com/anime/mahoutsukai-no-yome-nishi-no-shounen-to-seiran-no-kishi">
+                                        <figure class="fa-play-circle">
+                                            <img src="./uploads/portadas/3590.jpg"
+                                                alt="Mahoutsukai no Yome: Nishi no Shounen to Seiran no Kishi">
+                                        </figure>
+                                    </a>
+                                    <span class="anime-type-peli">Ova</span>
+                                </div>
+                                <div class="media-body">
+                                    <a
+                                        href="https://tioanime.com/anime/mahoutsukai-no-yome-nishi-no-shounen-to-seiran-no-kishi">
+                                        <h3 class="title">Mahoutsukai no Yome: Nishi no Shounen to Seiran no Kishi</h3>
+                                    </a>
+                                    <p class="description">
+                                        La historia original de tres partes sigue a Gabriel, un chico común que se acaba
+                                        de mudar de Londres y estaba aburrido de su...
+                                    </p>
+                                    <p class="genres">
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=fantasia"
+                                                class="btn btn-sm btn-light rounded-pill">Fantasía</a>
+                                        </span>
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=recuentos-de-la-vida"
+                                                class="btn btn-sm btn-light rounded-pill">Recuentos de la vida</a>
+                                        </span>
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=shounen"
+                                                class="btn btn-sm btn-light rounded-pill">Shounen</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="anime media align-items-center">
+                                <div class="thumb align-self-start">
+                                    <a href="https://tioanime.com/anime/hanma-baki-son-of-ogre">
+                                        <figure class="fa-play-circle">
+                                            <img src="./uploads/portadas/3553.jpg" alt="Hanma Baki: Son of Ogre">
+                                        </figure>
+                                    </a>
+                                    <span class="anime-type-peli">Ova</span>
+                                </div>
+                                <div class="media-body">
+                                    <a href="https://tioanime.com/anime/hanma-baki-son-of-ogre">
+                                        <h3 class="title">Hanma Baki: Son of Ogre</h3>
+                                    </a>
+                                    <p class="description">
+                                        Tercera parte de la serie....
+                                    </p>
+                                    <p class="genres">
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=artes-marciales"
+                                                class="btn btn-sm btn-light rounded-pill">Artes Marciales</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <a href="https://tioanime.com/directorio?type%5B%5D=2" class="btn btn-block btn-light rounded">Más
+                        Ovas</a>
+                </section>
+
+                <!-- Últimos Especiales -->
+                <section class="col-4 onas">
+                    <div class="header">
+                        <h1 class="title fa-fire">Últimos Especiales</h1>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <article class="anime media align-items-center">
+                                <div class="thumb align-self-start">
+                                    <a href="https://tioanime.com/anime/mahouka-koukou-no-rettousei-tsuiokuhen">
+                                        <figure class="fa-play-circle">
+                                            <img src="./uploads/portadas/3591.jpg"
+                                                alt="Mahouka Koukou no Rettousei: Tsuioku-hen">
+                                        </figure>
+                                    </a>
+                                    <span class="anime-type-peli">Especial</span>
+                                </div>
+                                <div class="media-body">
+                                    <a href="https://tioanime.com/anime/mahouka-koukou-no-rettousei-tsuiokuhen">
+                                        <h3 class="title">Mahouka Koukou no Rettousei: Tsuioku-hen</h3>
+                                    </a>
+                                    <p class="description">
+                                        Mirando a Miyuki y Tatsuya ahora, podría ser difícil imaginarlos como algo más
+                                        que hermanos cariñosos. Pero no siempre...
+                                    </p>
+                                    <p class="genres">
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=ciencia-ficcion"
+                                                class="btn btn-sm btn-light rounded-pill">Ciencia Ficción</a>
+                                        </span>
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=sobrenatural"
+                                                class="btn btn-sm btn-light rounded-pill">Sobrenatural</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="anime media align-items-center">
+                                <div class="thumb align-self-start">
+                                    <a href="https://tioanime.com/anime/kobayashisan-chi-no-maid-dragon-s-mini-dragon">
+                                        <figure class="fa-play-circle">
+                                            <img src="./uploads/portadas/3502.jpg"
+                                                alt="Kobayashi-san Chi no Maid Dragon S Mini Dragon">
+                                        </figure>
+                                    </a>
+                                    <span class="anime-type-peli">Especial</span>
+                                </div>
+                                <div class="media-body">
+                                    <a href="https://tioanime.com/anime/kobayashisan-chi-no-maid-dragon-s-mini-dragon">
+                                        <h3 class="title">Kobayashi-san Chi no Maid Dragon S Mini Dragon</h3>
+                                    </a>
+                                    <p class="description">
+                                        Cortos de Kobayashi-san Chi no Maid Dragon S...
+                                    </p>
+                                    <p class="genres">
+                                        <span class="btn btn-sm btn-primary rounded-pill">
+                                            <a href="https://tioanime.com/directorio?genero=comedia"
+                                                class="btn btn-sm btn-light rounded-pill">Comedia</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <a href="https://tioanime.com/directorio?type%5B%5D=3" class="btn btn-block btn-light rounded">Más
+                        Especial</a>
+                </section>
+
+            </div>
+
+            <!-- Últimos Animes -->
+            <section>
+                <div class="header">
+                    <h2 class="title fa-fire">Últimos Animes</h2>
+                    <a href="https://tioanime.com/directorio" class="btn btn-primary btn-sm rounded-pill">ver más</a>
+                </div>
+                <ul class="list-unstyled row">
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/kaginado-season-2">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3658.jpg"
+                                            alt="Kaginado Season 2"></figure>
+                                </div>
+                                <h3 class="title">Kaginado Season 2</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a
+                                href="https://tioanime.com/anime/honzuki-no-gekokujou-shisho-ni-naru-tame-ni-wa-shudan-wo-erandeiraremasen-3rd-season">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3657.jpg"
+                                            alt="Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 3rd Season">
+                                    </figure>
+                                </div>
+                                <h3 class="title">Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo
+                                    Erandeiraremasen 3rd Season</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/kono-healer-mendokusai">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3656.jpg"
+                                            alt="Kono Healer, Mendokusai"></figure>
+                                </div>
+                                <h3 class="title">Kono Healer, Mendokusai</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/kingdom-4th-season">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3655.jpg"
+                                            alt="Kingdom 4th Season"></figure>
+                                </div>
+                                <h3 class="title">Kingdom 4th Season</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/spy-x-family">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3654.jpg"
+                                            alt="Spy x Family"></figure>
+                                </div>
+                                <h3 class="title">Spy x Family</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/kawaii-dake-ja-nai-shikimorisan">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3653.jpg"
+                                            alt="Kawaii dake ja Nai Shikimori-san"></figure>
+                                </div>
+                                <h3 class="title">Kawaii dake ja Nai Shikimori-san</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/kunoichi-tsubaki-no-mune-no-uchi">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3652.jpg"
+                                            alt="Kunoichi Tsubaki no Mune no Uchi"></figure>
+                                </div>
+                                <h3 class="title">Kunoichi Tsubaki no Mune no Uchi</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/ao-ashi">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3651.jpg" alt="Ao Ashi">
+                                    </figure>
+                                </div>
+                                <h3 class="title">Ao Ashi</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/yatogamechan-kansatsu-nikki-4th-season">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3650.jpg"
+                                            alt="Yatogame-chan Kansatsu Nikki 4th Season"></figure>
+                                </div>
+                                <h3 class="title">Yatogame-chan Kansatsu Nikki 4th Season</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/kaguyasama-wa-kokurasetai-ultra-romantic">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3649.jpg"
+                                            alt="Kaguya-sama wa Kokurasetai: Ultra Romantic"></figure>
+                                </div>
+                                <h3 class="title">Kaguya-sama wa Kokurasetai: Ultra Romantic</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/jantama-pong">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3648.jpg"
+                                            alt="Jantama Pong☆"></figure>
+                                </div>
+                                <h3 class="title">Jantama Pong☆</h3>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-6 col-sm-4 col-md-3 col-xl-2">
+                        <article class="anime">
+                            <a href="https://tioanime.com/anime/dance-dance-danseur">
+                                <div class="thumb">
+                                    <figure class="fa-play-circle"><img src="./uploads/portadas/3647.jpg"
+                                            alt="Dance Dance Danseur"></figure>
+                                </div>
+                                <h3 class="title">Dance Dance Danseur</h3>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <figure class="navbar-brand logo"><img src="./assets/img/logo-ft.png" alt="logo"></figure>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftnav"
+                        aria-controls="ftnav" aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="ftnav">
+                        <ul class="menu-ft navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="https://tioanime.com/peticiones">Peticiones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://tioanime.com/#">Contacto</a></li>
+                        </ul>
+                        <ul class="social-ft navbar-nav">
+                            <li class="nav-item"><a class="nav-link fa-twitter fab" href="https://twitter.com/TioAnime5"
+                                    rel="nofollow" target="_blank" aria-hidden="true"></a></li>
+                            <li class="nav-item"><a class="nav-link fa-facebook-f fab"
+                                    href="https://www.facebook.com/tioanimeonline/" rel="nofollow" target="_blank"
+                                    aria-hidden="true"></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link fa-youtube fab"
+                                    href="https://www.youtube.com/channel/UC71wO3noGfhEx8WBcy9emLw/" rel="nofollow"
+                                    target="_blank" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <p>2019 tioanime.com</p>
+                <button class="btn btn-primary changeview on">
+                    <span class="fa-moon">Noche</span>
+                    <span class="fa-sun">Dia</span>
+                </button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal para inicio de sesión -->
+    <div class="modal fade modal-user" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-loginTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5 class="modal-title p-3" id="modal-loginTitle">
+                        <i class="fa-user text-success mr-3"></i>
+                        Iniciar Sesion
+                    </h5>
+                    <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="messages_in"></div>
+                    <form action="https://tioanime.com/#" class="p-3">
+                        <div class="form-group">
+                            <label>Correo electrónico</label>
+                            <input type="text" id="email" class="form-control form-control-lg">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Contraseña</label>
+                            <input type="password" id="password" class="form-control form-control-lg">
+                        </div>
+                        <p class="text-right mb-4">
+                            <button type="button" class="btn btn-primary btn-recovery text-success" data-toggle="modal"
+                                data-target="#modal-recovery" data-dismiss="modal">
+                                Olvide mi contraseñá
+                            </button>
+                        </p>
+                        <div class="mb-4">
+                            <button type="button" onclick="auth.in();" class="btn btn-primary btn-block btn-lg">Iniciar
+                                Sesion</button>
+                        </div>
+                        <div class="login-text">
+                            ¿No tienes una cuenta?
+                            <button type="button" class="btn btn-primary text-success" data-toggle="modal"
+                                data-target="#modal-signup" data-dismiss="modal">Registrate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para recuperar contraseña -->
+    <div class="modal fade modal-user" id="modal-recovery" tabindex="-1" role="dialog"
+        aria-labelledby="modal-recoveryTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5 class="modal-title p-3" id="modal-recoveryTitle">
+                        <i class="fa-lock text-success mr-3"></i>
+                        Recuperar Contraseña
+                    </h5>
+                    <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="messages_ar"></div>
+                    <form action="https://tioanime.com/#" class="p-3">
+                        <div class="form-group">
+                            <label>Correo electrónico</label>
+                            <input type="text" id="ar_email" class="form-control form-control-lg">
+                        </div>
+                        <div class="mb-4">
+                            <button type="button" onclick="auth.ar();" class="btn btn-primary btn-block btn-lg">Enviar
+                                mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para registro de cuenta -->
+    <div class="modal fade modal-user" id="modal-signup" tabindex="-1" role="dialog" aria-labelledby="modal-signupTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5 class="modal-title p-3" id="modal-signupTitle">
+                        <i class="fa-user-lock text-success mr-3"></i>
+                        Registrate
+                    </h5>
+                    <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="messages_ts">
+                    </div>
+                    <form action="https://tioanime.com/#" class="p-3">
+                        <div class="form-group">
+                            <label>Usuario</label>
+                            <input type="text" id="ts_user" class="form-control form-control-lg">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Email</label>
+                            <input type="email" id="ts_email" class="form-control form-control-lg">
+                        </div>
+                        <div class="form-group mb-4 position-relative">
+                            <label>Contraseña</label>
+                            <input type="password" id="ts_password" class="form-control form-control-lg">
+                            <button type="button" class="btn btn-primary btn-showpass"><i
+                                    class="fa-eye mr-0"></i></button>
+                        </div>
+                        <div class="mb-4">
+                            <button type="button" onclick="auth.up();"
+                                class="btn btn-primary btn-block btn-lg">Registrate</button>
+                        </div>
+                        <div class="login-text">
+                            ¿Ya tienes una cuenta?
+                            <button type="submit" class="btn btn-primary text-success" data-toggle="modal"
+                                data-target="#modal-login" data-dismiss="modal">Iniciar Sesion</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicio sección de scripts -->
+    <script src="./assets/js/jquery-3.3.1.min.js.descargar"></script>
+    <script src="./assets/js/popper.min.js.descargar"></script>
+    <script src="./assets/js/bootstrap.min.js.descargar"></script>
+    <script src="./assets/js/typewatch.js.descargar"></script>
+    <script>
+        var day_mode = 0;
+    </script>
+    <script src="./assets/js/tio.js.descargar"></script>
+    <script src="./assets/js/axios.min.js.descargar"></script>
+    <script src="./assets/js/auth.js.descargar"></script>
+    <script src="./assets/js/chs.js.descargar"></script>
+    <script src="./assets/js/ran.js.descargar"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134817444-1"></script>
+    -->
+    <script src="./assets/js/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134817444-1');
+    </script>
+    <!-- Fin sección de scripts -->
+
+</body>
+
+</html>
