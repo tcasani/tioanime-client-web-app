@@ -1,4 +1,62 @@
 {
-    "gcm_sender_id": "482941778795",
-    "gcm_sender_id_comment": "Do not change the GCM Sender ID"
-  }
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
+  "short_name": "TioAnime",
+  "name": "Anime Online en HD - TioAnime",
+  "icons": [
+    {
+      "src": "/assets/img/icon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/assets/img/android-icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/assets/img/tio_fb.jpg",
+      "type": "image/png",
+      "sizes": "250x250"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#263DFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#263DFF",
+  "shortcuts": [
+    {
+      "name": "Directorio de animes",
+      "short_name": "Animes",
+      "description": "Encuentra el anime que tanto estás buscando.",
+      "url": "/directorio",
+      "icons": [{ "src": "/assets/img/tio_fb.jpg", "sizes": "250x250" }]
+    },
+    {
+      "name": "Programación Semanal",
+      "short_name": "Programación",
+      "description": "Animes semanales, días y horarios aproximados!",
+      "url": "/programacion",
+      "icons": [{ "src": "/assets/img/tio_fb.jpg", "sizes": "250x250" }]
+    }
+  ],
+  "description": "El mejor portal para ver anime online sub español en calidad HD, descargar anime ligero en HD desde Mega, Mediafire y más! TioAnime tu mejor opción.",
+  "screenshots": [
+    {
+      "src": "/uploads/imgs/tio-450x900.png",
+      "type": "image/png",
+      "sizes": "450x900"
+    },
+    {
+      "src": "https://app.tioanime.com/assets/img/app.png",
+      "type": "image/png",
+      "sizes": "603x832"
+    },
+    {
+      "src": "https://lusogamer.com/wp-content/uploads/2020/10/Screenshot-of-Tio-Anime-461x1024.jpg",
+      "type":"image/jpg",
+      "sizes": "461x1024"
+    }
+  ]
+}
