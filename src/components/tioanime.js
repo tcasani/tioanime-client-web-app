@@ -1,6 +1,6 @@
 import Header from './header'
 import Footer from './footer'
-import Modals from "./modals";
+// import Modals from "./modals";
 // import styles from "./tioanime.module.css";
 
 export default function TioAnime({ children }) {
@@ -11,7 +11,7 @@ export default function TioAnime({ children }) {
                 {children}
                 <Footer />
             </div>
-            <Modals />
+            {/* <Modals /> */}
         </>
     )
 }

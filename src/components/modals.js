@@ -3,8 +3,7 @@
 
 export default function Modals() {
     return (
-        <>
-            {/* Modal para inicio de sesión */}
+        <>            
             <div className="modal fade modal-user" id="modal-login" tabIndex={-1} role="dialog" aria-labelledby="modal-loginTitle" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
@@ -34,7 +33,7 @@ export default function Modals() {
                                     </button>
                                 </p>
                                 <div className="mb-4">
-                                    <button type="button" onClick='auth.in();' className="btn btn-primary btn-block btn-lg">Iniciar
+                                    <button type="button" onClick={'auth.in();'} className="btn btn-primary btn-block btn-lg">Iniciar
                                         Sesion</button>
                                 </div>
                                 <div className="login-text">
@@ -46,7 +45,7 @@ export default function Modals() {
                     </div>
                 </div>
             </div>
-            {/* Modal para recuperar contraseña */}
+            
             <div className="modal fade modal-user" id="modal-recovery" tabIndex={-1} role="dialog" aria-labelledby="modal-recoveryTitle" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
@@ -75,7 +74,7 @@ export default function Modals() {
                     </div>
                 </div>
             </div>
-            {/* Modal para registro de cuenta */}
+            
             <div className="modal fade modal-user" id="modal-signup" tabIndex={-1} role="dialog" aria-labelledby="modal-signupTitle" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
