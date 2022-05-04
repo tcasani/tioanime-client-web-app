@@ -6,7 +6,7 @@ export default function Mangas() {
     const q = router.query;    
     return (
         <>
-        <h1>Mangas</h1>
+        <h1>Directorio de Mangas</h1>
         <p>{router.asPath}</p>
         </>
     );
