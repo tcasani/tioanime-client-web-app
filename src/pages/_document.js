@@ -9,14 +9,14 @@ export default function Document() {
                 <meta content="es" name="language" />
                 {/* <title>Anime Online en HD - TioAnime</title> */}
 
-                <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=1.0.1" media="all" />
-                <link rel="stylesheet" href="/assets/css/main.css?v=2.2.6" media="all" />
-                <link href="/assets/css/css" rel="stylesheet" />
+                {/* <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=1.0.1" media="all" /> */}
+                {/* <link rel="stylesheet" href="/assets/css/main.css?v=2.2.6" media="all" /> */}
+                {/* <link href="/assets/css/css" rel="stylesheet" /> */}
 
                 {/* Font Awesome auto generated */}
-                <link rel="stylesheet" href="/assets/css/fa-v4-font-face.css" id="fa-v4-font-face" />
-                <link rel="stylesheet" href="/assets/css/fa-v4-shims.css" id="fa-v4-shims" />
-                <link rel="stylesheet" href="/assets/css/fa-main.css" id="fa-main" />
+                {/* <link rel="stylesheet" href="/assets/css/fa-v4-font-face.css" id="fa-v4-font-face" /> */}
+                {/* <link rel="stylesheet" href="/assets/css/fa-v4-shims.css" id="fa-v4-shims" /> */}
+                {/* <link rel="stylesheet" href="/assets/css/fa-main.css" id="fa-main" /> */}
 
                 {/* Info página */}
                 <link rel="icon" href="/assets/img/icon-32x32.png" sizes={32} />
@@ -35,7 +35,7 @@ export default function Document() {
                 <link rel="manifest" href="/manifest.json" />
             </Head>
             <body className="dark">
-                {/* <Fb_plugin /> */}
+                <Fb_plugin />
                 <Page>
                     <Main />
                 </Page>

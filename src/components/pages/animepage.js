@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 export default function AnimeTemplate(id_anime, userdata) {
     var datos = {
         id_anime: id_anime,
@@ -10,7 +13,7 @@ export default function AnimeTemplate(id_anime, userdata) {
                     <div className="row">
                         <aside className="col col-sm-4 col-lg-3 col-xl-2">
                             <div className="thumb">
-                                <figure><img src="/uploads/portadas/3502.jpg" alt="img" /></figure>
+                                <figure><Image src="/uploads/portadas/3502.jpg" alt="img" layout='fill' /></figure>
                                 <a href="#" className="btn btn-danger btn-block status"><i className="fa-play-circle" />Finalizado</a>
                             </div>
                         </aside>
@@ -28,7 +31,7 @@ export default function AnimeTemplate(id_anime, userdata) {
                             </div>
                             <p className="genres">
                                 <span className="btn btn-sm btn-primary rounded-pill">
-                                    <a href="/directorio?genero=comedia" className="btn btn-sm btn-light rounded-pill">Comedia</a>
+                                    <Link href="/directorio?genero=comedia" className="btn btn-sm btn-light rounded-pill"><a>Comedia</a></Link>
                                 </span>
                             </p>
                             <p className="sinopsis">
@@ -57,7 +60,7 @@ export default function AnimeTemplate(id_anime, userdata) {
                         </aside>
                     </div>
                 </div>
-                <figure className="backdrop"><img src="/uploads/fondos/3502.jpg" alt="Kobayashi-san Chi no Maid Dragon S Mini Dragon" /></figure>
+                <figure className="backdrop"><Image src="/uploads/fondos/3502.jpg" alt="Kobayashi-san Chi no Maid Dragon S Mini Dragon" layout='fill' /></figure>
             </article>
             {id_anime}
         </>

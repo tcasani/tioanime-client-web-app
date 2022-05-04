@@ -1,0 +1,26 @@
+@import '../public/assets/css/bootstrap.min.css?v=1.0.1';
+@import '../public/assets/css/main.css?v=2.2.6';
+@import '../public/assets/css/fonts.css';
+
+@import '../public/assets/css/fa-v4-font-face.css';
+@import '../public/assets/css/fa-v4-shims.css';
+@import '../public/assets/css/fa-main.css';
+
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+*/
+
+html,
+body {
+  box-sizing: border-box;
+}

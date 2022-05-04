@@ -1,4 +1,5 @@
-// import Link from 'next/link'
+import Link from 'next/link'
+import Image from 'next/image'
 // import styles from './header.module.css'
 
 export default function Header() {
@@ -8,9 +9,9 @@ export default function Header() {
                 <nav className="menu navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
                         {/* Logo */}
-                        <a className="navbar-brand" href="/">
-                            <figure className="logo"><img src="/assets/img/logo-dark.png" alt="logo" /></figure>
-                        </a>
+                        <Link className="navbar-brand" href="/">
+                            <a><figure className="logo"><Image src="/assets/img/logo-dark.png" alt="logo" width={222} height={60} /></figure></a>
+                        </Link>
                         {/* Botón menú (Solo vista móvil) */}
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon" />
@@ -33,10 +34,9 @@ export default function Header() {
                             </div>
                             {/* Enlaces a páginas */}
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item"><a className="nav-link" href="/">Inicio</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/directorio">Animes</a></li>
-                                <li className="nav-item fa-star"><a className="nav-link" href="/programacion">Programación
-                                    Semanal</a></li>
+                                <li className="nav-item"><Link className="nav-link" href="/"><a>Inicio</a></Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="/directorio"><a>Animes</a></Link></li>
+                                <li className="nav-item fa-star"><Link className="nav-link" href="/programacion"><a>Programación Semanal</a></Link></li>
                             </ul>
                             {/* Widget de búsqueda */}
                             <div className="search dropdown">
