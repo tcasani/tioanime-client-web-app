@@ -31,7 +31,7 @@ export default function AnimeTemplate(id_anime, userdata) {
                             </div>
                             <p className="genres">
                                 <span className="btn btn-sm btn-primary rounded-pill">
-                                    <Link href="/directorio?genero=comedia" className="btn btn-sm btn-light rounded-pill"><a>Comedia</a></Link>
+                                    <Link href="/directorio?genero=comedia"><a  className="btn btn-sm btn-light rounded-pill">Comedia</a></Link>
                                 </span>
                             </p>
                             <p className="sinopsis">

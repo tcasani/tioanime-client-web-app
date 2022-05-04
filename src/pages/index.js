@@ -304,13 +304,13 @@ export default function Home() {
                       </p>
                       <p className="genres">
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=drama" className="btn btn-sm btn-light rounded-pill">Drama</Link>
+                          <Link href="https://tioanime.com/directorio?genero=drama"><a className="btn btn-sm btn-light rounded-pill">Drama</a></Link>
                         </span>
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=fantasia" className="btn btn-sm btn-light rounded-pill">Fantasía</Link>
+                          <Link href="https://tioanime.com/directorio?genero=fantasia"><a className="btn btn-sm btn-light rounded-pill">Fantasía</a></Link>
                         </span>
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=recuentos-de-la-vida" className="btn btn-sm btn-light rounded-pill">Recuentos de la vida</Link>
+                          <Link href="https://tioanime.com/directorio?genero=recuentos-de-la-vida"><a className="btn btn-sm btn-light rounded-pill">Recuentos de la vida</a></Link>
                         </span>
                       </p>
                     </div>
@@ -335,21 +335,20 @@ export default function Home() {
                       </p>
                       <p className="genres">
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=accion" className="btn btn-sm btn-light rounded-pill">Acción</Link>
+                          <Link href="https://tioanime.com/directorio?genero=accion"><a className="btn btn-sm btn-light rounded-pill">Acción</a></Link>
                         </span>
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=aventura" className="btn btn-sm btn-light rounded-pill">Aventuras</Link>
+                          <Link href="https://tioanime.com/directorio?genero=aventura"><a className="btn btn-sm btn-light rounded-pill">Aventuras</a></Link>
                         </span>
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=fantasia" className="btn btn-sm btn-light rounded-pill">Fantasía</Link>
+                          <Link href="https://tioanime.com/directorio?genero=fantasia"><a className="btn btn-sm btn-light rounded-pill">Fantasía</a></Link>
                         </span>
                       </p>
                     </div>
                   </article>
                 </li>
               </ul>
-              <Link href="https://tioanime.com/directorio?type%5B%5D=1" className="btn btn-block btn-light rounded">Más
-                Películas</Link>
+              <Link href="https://tioanime.com/directorio?type%5B%5D=1"><a className="btn btn-block btn-light rounded">Más Películas</a></Link>
             </section>
             {/* Últimos Ovas */}
             <section className="col-4 ovas">
@@ -376,13 +375,13 @@ export default function Home() {
                       </p>
                       <p className="genres">
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=fantasia" className="btn btn-sm btn-light rounded-pill">Fantasía</Link>
+                          <Link href="https://tioanime.com/directorio?genero=fantasia"><a className="btn btn-sm btn-light rounded-pill">Fantasía</a></Link>
                         </span>
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=recuentos-de-la-vida" className="btn btn-sm btn-light rounded-pill">Recuentos de la vida</Link>
+                          <Link href="https://tioanime.com/directorio?genero=recuentos-de-la-vida"><a className="btn btn-sm btn-light rounded-pill">Recuentos de la vida</a></Link>
                         </span>
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=shounen" className="btn btn-sm btn-light rounded-pill">Shounen</Link>
+                          <Link href="https://tioanime.com/directorio?genero=shounen"><a className="btn btn-sm btn-light rounded-pill">Shounen</a></Link>
                         </span>
                       </p>
                     </div>
@@ -406,15 +405,14 @@ export default function Home() {
                       </p>
                       <p className="genres">
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=artes-marciales" className="btn btn-sm btn-light rounded-pill">Artes Marciales</Link>
+                          <Link href="https://tioanime.com/directorio?genero=artes-marciales"><a className="btn btn-sm btn-light rounded-pill">Artes Marciales</a></Link>
                         </span>
                       </p>
                     </div>
                   </article>
                 </li>
               </ul>
-              <Link href="https://tioanime.com/directorio?type%5B%5D=2" className="btn btn-block btn-light rounded">Más
-                Ovas</Link>
+              <Link href="https://tioanime.com/directorio?type%5B%5D=2"><a className="btn btn-block btn-light rounded">Más Ovas</a></Link>
             </section>
             {/* Últimos Especiales */}
             <section className="col-4 onas">
@@ -441,10 +439,10 @@ export default function Home() {
                       </p>
                       <p className="genres">
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=ciencia-ficcion" className="btn btn-sm btn-light rounded-pill">Ciencia Ficción</Link>
+                          <Link href="https://tioanime.com/directorio?genero=ciencia-ficcion"><a className="btn btn-sm btn-light rounded-pill">Ciencia Ficción</a></Link>
                         </span>
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=sobrenatural" className="btn btn-sm btn-light rounded-pill">Sobrenatural</Link>
+                          <Link href="https://tioanime.com/directorio?genero=sobrenatural"><a className="btn btn-sm btn-light rounded-pill">Sobrenatural</a></Link>
                         </span>
                       </p>
                     </div>
@@ -468,22 +466,21 @@ export default function Home() {
                       </p>
                       <p className="genres">
                         <span className="btn btn-sm btn-primary rounded-pill">
-                          <Link href="https://tioanime.com/directorio?genero=comedia" className="btn btn-sm btn-light rounded-pill">Comedia</Link>
+                          <Link href="https://tioanime.com/directorio?genero=comedia"><a className="btn btn-sm btn-light rounded-pill">Comedia</a></Link>
                         </span>
                       </p>
                     </div>
                   </article>
                 </li>
               </ul>
-              <Link href="https://tioanime.com/directorio?type%5B%5D=3" className="btn btn-block btn-light rounded">Más
-                Especial</Link>
+              <Link href="https://tioanime.com/directorio?type%5B%5D=3"><a className="btn btn-block btn-light rounded">Más Especial</a></Link>
             </section>
           </div>
           {/* Últimos Animes */}
           <section>
             <div className="header">
               <h2 className="title fa-fire">Últimos Animes</h2>
-              <Link href="https://tioanime.com/directorio" className="btn btn-primary btn-sm rounded-pill">ver más</Link>
+              <Link href="https://tioanime.com/directorio"><a className="btn btn-primary btn-sm rounded-pill">ver más</a></Link>
             </div>
             <ul className="list-unstyled row">
               <li className="col-6 col-sm-4 col-md-3 col-xl-2">
